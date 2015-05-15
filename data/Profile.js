@@ -7,7 +7,7 @@ var MongoClient = require('mongodb').MongoClient
 
 var exports = module.exports = {};
 
-// Connection URL
+// Connection URL, replace with your database connection string
 var url = 'mongodb://localhost:27017/chatDemo';
 
 exports.Profile = function(email, name, authToken, gcmId, avatar) {

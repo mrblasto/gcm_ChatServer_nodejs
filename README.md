@@ -20,7 +20,7 @@ regid          | registration token obtained by client from Google Play Services
 email          | email of a Google Play Account to which registration applies (Required)
 name           | name used to identify client for sending messages to it (Required)
 authToken      | authentication token obtained from OAuth.  Not used in this version (Optional)
-avatar         | url locating image associated with client.  Not used in this version
+avatar         | url locating image associated with client.  Not used in this version (Optional)
 
 After successful registration the client can send an http post with a url of `*hostname*:3000/chat` with parameters
 

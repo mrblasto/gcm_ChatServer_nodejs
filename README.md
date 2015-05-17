@@ -1,6 +1,6 @@
-# gcm_nodejsChatServer
+# gcm_ChatServer_nodejs
 ## Description
-gcm_nodejsChatServer is a web service that implements a chat server using Google Cloud Messaging, node-gcm, express, and mongodb.  For a complete list of depedencies see package.json.  Stay tuned for an upload of an Android Client to use this sever.
+gcm_ChatServer_nodejs is a web service that implements a chat server using Google Cloud Messaging, node-gcm, express, and mongodb.  For a complete list of depedencies see package.json.  Stay tuned for an upload of an Android Client to use this sever.
 
 ## Installation and setup
 To install code, clone or download then run `npm install` to install the dependencies.
@@ -10,7 +10,7 @@ To use you need to replace the id on line 16 of index.js with your public Google
 You'll also need access to a mongodb server. Change line 11 of data/profile.js to a connection string specific to your database.  The connection string there now is the default. See https://www.mongodb.org/ for more information about mongodb.  Note that the database and tables are created the first time the database is used.  This is a feature of mongodb.
 
 ## Running and Using
-Open a command prompt and browse to where you've downloaded gcm_nodejsChatServer and run `node .` to start the server.  Open a second command prompt (doesn't matter where) and start mongodb: `mongod`.
+Open a command prompt and browse to where you've downloaded gcm_ChatServer_nodejs and run `node .` to start the server.  Open a second command prompt (doesn't matter where) and start mongodb: `mongod`.
 
 There are two steps to sending a message.  All clients must call first call register as an http post with a url of `*hostname*:3000/register' with parameters ( example: `http://localhost:3000/register` ):
 

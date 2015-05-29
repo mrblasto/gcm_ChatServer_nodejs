@@ -72,7 +72,7 @@ app.post("/register", function(req,res, next){
         if(result.status != "error") {
             result.username = name;
         }
-        consoler.log("registration result: ", JSON.stringify(result));
+        console.log("registration result: ", JSON.stringify(result));
         res.json(result);
     })
 
